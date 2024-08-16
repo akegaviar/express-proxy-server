@@ -21,13 +21,13 @@ async function fetchBalance() {
       .then(response => response.json())
       .then(data => {
         // Handle the response data
-        console.log(`The balance is: ${data.balance} ETH`);
+        console.log(`The balance is: ${data.balance} SOL`);
 
         // Slice the response to only show the first 6 numbers
-        const slicedBalance = data.balance.slice(0, 7)
+        const slicedBalance = parseFloat(data.balance).toFixed(6)
 
         // Display the balance in the front end
-        displayBalance.innerHTML = `Balance: ${slicedBalance} ETH`
+        displayBalance.innerHTML = `Balance: ${slicedBalance} SOL`
       })
       .catch(error => {
         // Handle any errors

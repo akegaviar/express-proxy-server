@@ -1,14 +1,14 @@
 {
-  "name": "rpc-proxy-server",
+  "name": "solana-proxy-server",
   "version": "1.0.0",
-  "description": "This project shows a simple proxy server to send post requests to a blockchian using the Web3.js library, hiding your endpoint URL.",
+  "description": "This project shows a simple proxy server to send post requests to Solana using the @solana/web3.js library, hiding your endpoint URL.",
   "main": "index.js",
   "scripts": {
     "start": "node index",
     "dev": "nodemon index"
   },
   "keywords": [
-    "web3.js",
+    "@solana/web3.js",
     "node",
     "api",
     "endpoint",
@@ -17,14 +17,14 @@
     "protect",
     "express"
   ],
-  "author": "Davide Zambiasi",
+  "author": "Your Name",
   "license": "MIT",
   "dependencies": {
+    "@solana/web3.js": "^1.73.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "express-rate-limit": "^6.7.0",
-    "web3": "^1.8.1"
+    "express-rate-limit": "^6.7.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
